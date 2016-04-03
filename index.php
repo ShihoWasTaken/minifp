@@ -61,6 +61,9 @@ while($f = fgets(STDIN)){
 }
 */
 
+Model::displayTableStructure('insert');
+exit();
+
 /* Cas où minifp est appelé sans commande */
 if($argc == 1)
 {
