@@ -1,0 +1,10 @@
+Décommentez la ligne
+;phar.readonly = On
+par
+phar.readonly = false
+afin de permettre la création d'archives phar
+
+Le programme a été conçu à l'aide du système d'achives PHP (Phar)
+Cela permet de "compiler" les sources .php en un seul fichier exécutable
+On peut ainsi organiser ses sources comme on le désire et livrer un unique fichier executable
+Cela permet une maintenance et un développement plus aisé
