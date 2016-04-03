@@ -105,13 +105,17 @@ else if($argc > 2)
 				SPDO::getInstance()->createColumns($argv);
 			}
 		break;
-
+		case '--data':
+			if($argc < 4)
+			{
+				echo 'nombre de paramètres incorrect' . PHP_EOL;
+			}
+			else
+			{
+				SPDO::getInstance()->insert($argv);
+			}
 		default:
 		break;
-	}
-	if($argv[1] == "--model")
-	{
-
 	}
 }
 echo PHP_EOL;
