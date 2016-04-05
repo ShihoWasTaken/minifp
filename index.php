@@ -61,16 +61,6 @@ while($f = fgets(STDIN)){
 }
 */
 
-$file = "includes/Controller.php";
-$newfile = "Controller.php";
-
-if (!copy($file, $newfile)) {
-	echo "La copie $file du fichier a échoué...\n";
-}
-else
-	echo "La copie $file du fichier a réussie\n";
-exit();
-
 /* Cas où minifp est appelé sans commande */
 if($argc == 1)
 {

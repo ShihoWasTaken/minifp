@@ -34,7 +34,7 @@
     {
         if(!empty($message))
             echo '<div class="alert alert-' . $message['class'] . ' fade in" role="alert">
-                    <a href="perso/#" class="close" data-dismiss="alert">&times;</a>
+                    <a href="#" class="close" data-dismiss="alert">&times;</a>
                     ' . $message['texte'] . '</div>';
     }
 
@@ -88,44 +88,44 @@ $skillbars = simplexml_load_file('skillbar.xml');
 	<head>
         <meta charset="utf-8">
 		<meta name="keywords" content="kenny, guiougou, portfolio, site, web, developpeur, programmeur, webdesigneur, webmaster">
-		<link rel="icon" type="image/png" href="perso/images/favicon.png" />
+		<link rel="icon" type="image/png" href="images/favicon.png" />
         
         <!-- Insertion de la bibliotheque jQuery -->
-        <script src="perso/js/jquery-2.1.4.min.js"></script>
+        <script src="js/jquery-2.1.4.min.js"></script>
         
         <!-- Google Analytics -->
-        <script src="perso/js/google-analytics.js"></script>
+        <script src="js/google-analytics.js"></script>
                 
          <!-- FullPage -->
-        <link rel="stylesheet" type="text/css" href="perso/fullPage/jquery.fullPage.css" />
-        <script src="perso/fullPage/jquery.easings.min.js"></script>
-        <script type="text/javascript" src="perso/fullPage/jquery.fullPage.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="fullPage/jquery.fullPage.css" />
+        <script src="fullPage/jquery.easings.min.js"></script>
+        <script type="text/javascript" src="fullPage/jquery.fullPage.min.js"></script>
         
         <!-- Original Hover effects -->
-        <link href="perso/OriginalHoverEffects/style_common.css" rel="stylesheet">
-        <link href="perso/OriginalHoverEffects/style10.css" rel="stylesheet">
+        <link href="OriginalHoverEffects/style_common.css" rel="stylesheet">
+        <link href="OriginalHoverEffects/style10.css" rel="stylesheet">
         
         <!-- Animated skillbars -->
-        <link rel="stylesheet" href="perso/css/skillbar.css" type="text/css" />
+        <link rel="stylesheet" href="css/skillbar.css" type="text/css" />
         
         <!-- InView -->
-        <script src="perso/js/jquery.inview.min.js"></script>        
+        <script src="js/jquery.inview.min.js"></script>        
 
         <!-- Animated headline -->
-        <link rel="stylesheet" href="perso/animated-headline/css/style.css">
-        <link rel="stylesheet" href="perso/css/headline.css" type="text/css" />
-        <script src="perso/animated-headline/js/modernizr.js"></script>
-        <script src="perso/animated-headline/js/main.js"></script>
+        <link rel="stylesheet" href="animated-headline/css/style.css">
+        <link rel="stylesheet" href="css/headline.css" type="text/css" />
+        <script src="animated-headline/js/modernizr.js"></script>
+        <script src="animated-headline/js/main.js"></script>
         
         <!-- Slimbox -->
-        <script type="text/javascript" src="perso/slimbox/js/slimbox2.js"></script>
-        <link rel="stylesheet" href="perso/slimbox/css/slimbox2.css" type="text/css" media="screen" />
+        <script type="text/javascript" src="slimbox/js/slimbox2.js"></script>
+        <link rel="stylesheet" href="slimbox/css/slimbox2.css" type="text/css" media="screen" />
 		        
         <!-- Bootstrap -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
-		<link href="perso/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <link href="perso/bootstrap/css/font-awesome.min.css" rel="stylesheet">
-        <script src="perso/bootstrap/js/bootstrap.min.js"></script>
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="bootstrap/css/font-awesome.min.css" rel="stylesheet">
+        <script src="bootstrap/js/bootstrap.min.js"></script>
                 
         <script type="text/javascript">
             $(document).ready(function() {
@@ -200,7 +200,7 @@ $skillbars = simplexml_load_file('skillbar.xml');
         </script>
 
         <!-- Feuille de style perso -->
-        <link rel="stylesheet" href="perso/css/main.css" type="text/css" />
+        <link rel="stylesheet" href="css/main.css" type="text/css" />
         
 		<title>Portfolio de Kenny GUIOUGOU</title>
 	</head>
@@ -220,9 +220,9 @@ $skillbars = simplexml_load_file('skillbar.xml');
                 </div>
                 <div id="mobile-nav" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav pull-left" id="menu">
-                        <li data-menuanchor="accueil"><a href="perso/#accueil" >Accueil</a></li>
-                        <li data-menuanchor="competences"><a href="perso/#competences" >Compétences</a></li>
-                        <li data-menuanchor="portfolio"><a href="perso/#portfolio" >Portfolio</a></li>
+                        <li data-menuanchor="accueil"><a href="#accueil" >Accueil</a></li>
+                        <li data-menuanchor="competences"><a href="#competences" >Compétences</a></li>
+                        <li data-menuanchor="portfolio"><a href="#portfolio" >Portfolio</a></li>
                     </ul>
                 </div>
             </div>
@@ -253,7 +253,7 @@ $skillbars = simplexml_load_file('skillbar.xml');
                                     <b>Java&nbsp;</b>
                                 </span>
                             </h1>
-                            <a href="perso/cv.pdf" target="_blank" class="btn btn-flat btn-lg" id="cv-download"><i class="fa fa-download   fa-lg"></i> Télécharger mon CV</a>
+                            <a href="cv.pdf" target="_blank" class="btn btn-flat btn-lg" id="cv-download"><i class="fa fa-download   fa-lg"></i> Télécharger mon CV</a>
                         </section>
                     </div>
                 </div>
@@ -290,9 +290,9 @@ $skillbars = simplexml_load_file('skillbar.xml');
                         <?php $count_portfolio = 1; ?>
                         <?php foreach ($projets as $projet): ?>
                         <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 fadeInBlock">
-                            <a href="perso/#" class="info" data-toggle="modal" data-target="#portfolio-info-<?php echo $count_portfolio; ?>">
+                            <a href="#" class="info" data-toggle="modal" data-target="#portfolio-info-<?php echo $count_portfolio; ?>">
                             <div class="view view-tenth">
-                                <img src="perso/images/<?php echo $projet->image; ?>" />
+                                <img src="images/<?php echo $projet->image; ?>" />
                                 <div class="mask">
                                     <h2><?php echo $projet->titre; ?></h2>
                                     <p>
@@ -310,7 +310,7 @@ $skillbars = simplexml_load_file('skillbar.xml');
                 </div>
             </div>
         </div>
-         	<script src="perso/js/fittext.js"></script>
+         	<script src="js/fittext.js"></script>
 	<script type="text/javascript">
 		$("#main_title").fitText();
 	</script>
