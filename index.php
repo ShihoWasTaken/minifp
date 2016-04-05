@@ -61,6 +61,16 @@ while($f = fgets(STDIN)){
 }
 */
 
+$file = "includes/Controller.php";
+$newfile = "Controller.php";
+
+if (!copy($file, $newfile)) {
+	echo "La copie $file du fichier a échoué...\n";
+}
+else
+	echo "La copie $file du fichier a réussie\n";
+exit();
+
 /* Cas où minifp est appelé sans commande */
 if($argc == 1)
 {
@@ -115,6 +125,31 @@ else if($argc > 2)
 				SPDO::getInstance()->insert($argv);
 			}
 		default:
+		case '--vue':
+			if($argv[2] == "-liste")
+				View::displayAllTAbles();
+			else
+			{
+				if($argc < 4)
+				{
+					echo 'nombre de paramètres incorrect' . PHP_EOL;
+				}
+				else
+				{
+					switch($argv[3])
+					{
+						case "-montre":
+							View::showTable($argv[2]);
+						break;
+						case "-uri":
+							View::showURI($argv[2]);
+						break;
+						case "-navigue":
+							View::browseTable($argv[2]);
+						break;
+					}
+				}
+			}
 		break;
 	}
 }

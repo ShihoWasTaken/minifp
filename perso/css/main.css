@@ -1,0 +1,259 @@
+@font-face {
+font-family: 'Caecilia';
+src: url('../fonts/caecilialtstd-roman-webfont.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'Gotham';
+src: url('../fonts/gotham-book.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+
+html, body
+{
+    height: 100%;
+    width: 100%;
+    font-family:  'Caecilia',arial,helvetica;
+}
+
+.background
+{
+    min-height: 100%;
+    background-size: cover;
+    padding-top: 50px;
+    background-position: top center; 
+}
+
+.alert
+{
+    position: fixed;
+    z-index: 99;
+    width: 80%;
+    margin-bottom: 0;
+    margin-top: 80px;
+    margin-left: 10%; 
+}
+
+.modal-header 
+{
+    color: white;
+    background-color: #49afcd;
+}
+
+.modal-header .close
+{
+    font-size: 30px;
+    color: white;
+    filter: alpha(opacity=70);
+    opacity: .7;
+}
+
+.modal-body img
+{
+    width: 100%;
+}
+
+.modal-links a, .modal-links .btn-group, .modal-links button
+{
+    margin: 5px 0;
+    width: 100%;
+}
+
+.modal-body p
+{
+    font-size: 14px;
+}
+
+.modal-body .paragraphs
+{
+    margin: 15px 0 0 0;
+    padding: 0 5px;
+}
+
+.modal-table-container
+{
+    margin: 10px 0;
+}
+
+.modal table tr
+{
+    margin: 5px 0;
+}
+
+.modal table tr
+{
+    vertical-align: top;
+}
+
+.modal-body, .modal-body p
+{
+    font-family: Calibri;
+    font-size: 15px;
+    color: rgb(82, 82, 82);    
+}
+
+.modal-body p
+{
+    margin: 0 0 20px;  
+}
+
+.container-fluid
+{
+    padding-left: 0;
+    padding-right: 0; 
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus 
+{
+    background-color: #49afcd;
+}
+
+.row
+{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#section0
+{
+    background-image: url('../images/background.jpg');
+}
+
+#section1, #section2, #section3
+{
+    background-image: url('../images/page_bg.jpg');
+}
+
+#section1 img
+{
+    height: 200px;
+    width: 200px;
+}
+
+.form-control, .alert, .modal-content
+{
+    border-radius: 0;
+}
+
+#main_title
+{
+    color: white;
+    text-shadow: 2px 2px 2px #111;
+    font-size: 50px;
+}
+
+#main_title b
+{
+    font-weight: normal;
+    font-family:  'Caecilia',arial,helvetica !important;
+}
+
+.section-title
+{
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+    margin: 0px 0 50px 0;
+    text-shadow: 2px 2px 2px #111;
+}
+
+.btn-flat-border 
+{
+    color: white;
+    border: 3px solid white;
+    padding: 15px 30px;
+    transition: ease-in-out 0.6s;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 0.15em;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    border-radius: 0;
+}
+
+.btn-flat-border:hover 
+{
+    color: white;
+    background-color: #49afcd;
+    border: 3px solid #49afcd;
+    text-decoration: initial;
+    transition: ease-in-out 0.6s;
+}
+
+.btn-default 
+{
+    background-color: #49afcd;
+    color: white;
+    border-radius: 0px;
+    
+    
+    vertical-align: middle;
+    cursor: pointer;
+    display: inline-block;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+    -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+    border-radius: 0;
+    
+    font-family:  'Caecilia',arial,helvetica;
+}
+
+.btn-default.active, .btn-default.focus, .btn-default:active, .btn-default:focus, .btn-default:hover, .open>.dropdown-toggle.btn-default
+{
+    background-color: black;
+    color: white;
+}
+
+.btn-default.active, .btn-default:active, .open>.dropdown-toggle.btn-default
+{
+    background-image: none;
+}
+
+.btn-flat
+{
+    background-color: #49afcd;
+    color: white;
+    transition: ease-in-out 0.6s;
+    border-radius: 0px;
+}
+
+.btn-flat:hover 
+{
+    text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+    background-color: white;
+    color: #49afcd;
+    background-position: 0 -15px;
+    -webkit-transition: background-position .1s linear;
+    -moz-transition: background-position .1s linear;
+    -ms-transition: background-position .1s linear;
+    -o-transition: background-position .1s linear;
+    transition: background-position .1s linear;
+    border-color: white;
+    transition: ease-in-out 0.6s;
+}
+
+textarea
+{ 
+    resize:none; 
+}
+
+#navbar button
+{
+    padding: 14px 18px;
+    margin: 0;
+}
+
+#cv-download
+{
+    margin-top: 40px;
+}
+
+.fadeInBlock
+{
+    opacity: 0;
+    padding-right: 0;
+    padding-left: 0;
+}

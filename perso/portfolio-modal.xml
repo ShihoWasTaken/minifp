@@ -1,0 +1,291 @@
+<?xml version='1.0' standalone='yes'?>
+<modals>
+    <!-- Début #1 Pink Ward -->
+    <modal>
+        <titre>Site Pinkward</titre>
+        <periode>septembre 2013 - novembre 2014</periode>
+        <poste>Webmaster/Développeur bénévole</poste>
+        <skill>PHP</skill>
+        <skill>Wordpress</skill>
+        <bouton>
+            <link>http://www.pinkward.fr</link>
+            <icone>eye</icone>
+            <titre>Voir le site</titre>
+        </bouton>
+        <image>
+            <titre>Capture d'écran d'un article du site</titre>
+            <link>pinkward.jpg</link>
+        </image>
+        <paragraphe>
+            J'ai rejoins Pinkward en septembre 2013, à l'époque j'étais novice en programmation, et j'avais besoin de m'entrainer un peu en situation réelle. J'ai commencé en tant que rédacteur, puis l'ancien webmaster ayant quitté l'association, j'ai postulé en tant que remplaçant.
+        </paragraphe>
+        <paragraphe>
+            Pinkward est une structure esport (sport électronique), elle possède une vingtaine de rédacteurs utilisant le CMS Wordpress pour écrire des articles, ou des guides de jeu.J'étais en charge du développement d'outils ayant pour but de faciliter la rédaction d'articles, étant donné que les rédacteurs n'avait aucune connaissance en HTML.
+        </paragraphe>
+        <paragraphe>
+                    J'ai également fait beaucoup d'optimisation du site afin que les pages s'affichent plus rapidement. Au départ de l'ancien Webmaster, une page mettait 9 secondes en moyenne à s'afficher, après mes optimisations, les pages ne mettaient plus que entre 1 et 2 secondes à s'afficher. Cela a beaucoup aidé au niveau du référencement sur Google, apportant beaucoup plus de vues à nos articles.
+        </paragraphe>
+    </modal>
+    <!-- Fin #1 Pink Ward -->   
+    <!-- Début #2 Générateur HTML -->
+    <modal>
+        <titre>Générateur HTML pour Wordpress</titre>
+        <periode>janvier 2014 - novembre 2014</periode>
+        <poste>Développeur bénévole</poste>
+        <skill>Qt</skill>
+        <skill>C++</skill>
+        <bouton>
+            <link></link>
+            <icone>eye</icone>
+            <titre>Démo</titre>
+        </bouton>
+        <boutonGroupe>
+            <icone>download</icone>
+            <titre>Télécharger</titre>
+            <element category="bouton">
+                <link></link>
+                <icone>folder</icone>
+                <titre>Sources</titre>
+            </element>
+            <element category="divider">
+            </element>
+            <element category="header">
+                <name>Exécutable(s)</name>
+            </element>
+            <element category="bouton">
+                <link>https://drive.google.com/folderview?id=0B6ljvdcpSGAyZnBKa2pheExuMEE</link>
+                <icone>windows</icone>
+                <titre>Windows - 64 bit</titre>
+            </element>
+        </boutonGroupe>
+        <image>
+            <titre>Capture d'écran du programme générant le HTML</titre>
+            <link>generateur.jpg</link>
+        </image>
+        <paragraphe>
+            Durant mon expérience chez Pink Ward, nous avons été confronté à une problématique pour sortir des guides de jeux. Nous devions faire des guides pour chaque personnage d'un jeu, respectant la même structure. Bien sur il est assez facile de faire des templates avec Wordpress avec des thèmes ou plugin payants, mais étant dans une association à but non lucratif et sans budget, j'ai du me rabattre sur mon ingéniosité.
+        </paragraphe>
+        <paragraphe>
+            J'ai du créer un programme qui générait un code HTML avec en plus du JQuery afin d'avoir des guides respectant la même structure, et à la fois beaux et dynamiques afin d'avoir un avantage par rapport aux autres sites du genre, et générer plus de traffic sur le site.
+        </paragraphe>
+        <paragraphe>
+            Le but était d'attirer des internautes sur notre site avec des guides attrayants capables de concurrencer ceux des autres sites d'esport.
+        </paragraphe>
+    </modal>
+    <!-- Fin #2 Générateur HTML -->
+    <!-- Début #3 ADN -->
+    <modal>
+        <titre>Séquençage d'ADN en parallèle sur cluster de calcul</titre>
+        <periode>janvier 2014 - juin 2014</periode>
+        <poste>Etudiant encadré</poste>
+        <skill>C</skill>
+        <skill>Open MPI</skill>
+        <bouton>
+            <link>http://www.cnrs.fr/</link>
+            <icone>eye</icone>
+            <titre>Voir le site</titre>
+        </bouton>
+        <bouton>
+            <link>https://interstices.info/jcms/int_63223/les-sequenceurs-a-haut-debit</link>
+            <icone>info-circle</icone>
+            <titre>Séquençage</titre>
+        </bouton>
+        <image>
+            <titre>Salle des séquenceurs au Genoscope à Évry.&lt;br&gt;Photo © CNRS Photothèque - Hubert Rague</titre>
+            <link>sequencage.jpg</link>
+        </image>
+        <paragraphe>
+            Ce projet fût de loin le plus dur auquel j'ai participé, nous étions un groupe de 4 et nous avons passé énormément de temps dessus. Mais en contrepartie, cela nous a fait une bonne expérience avec la programmation parallèle.&lt;br&gt;
+                        Nous avons utilisé Open MPI pour la parallélisation, c'était très dur étant donné le peu de documentation disponible.
+                        Notre objectif était de pouvoir lire et traiter un fichier contenant des reads d'ADN et les classer par chromosome afin de pouvoir ensuite repérer les génômes cancéreux.
+        </paragraphe>
+        <paragraphe>
+            Il y'avais un gros soucis d'optimisation car les fichiers à traiter faisaient entre 700 Go et 1 To en moyenne.
+                        Le traitement d'un tel fichier mettait en moyenne une semaine en séquentiel, le but était de pouvoir utiliser la puissance du cluster de calcul du CNRS (environ 800 coeurs de processeur) afin de réduire le temps de calcul. Après parallelisation du programme, le traitement du fichier est devenu possible en environ 1h (en utilisant 200 coeurs).
+        </paragraphe>
+        <paragraphe>
+            Le but était d'attirer des internautes sur notre site avec des guides attrayants capables de concurrencer ceux des autres sites d'esport.
+        </paragraphe>
+    </modal>
+    <!-- Fin #3 ADN -->
+    <!-- Début #4 site de tchat -->
+    <modal>
+        <titre>Site de tchat</titre>
+        <periode>mars 2014 - avril 2014</periode>
+        <poste>Projet étudiant</poste>
+        <skill>HTML</skill>
+        <skill>CSS</skill>
+        <skill>PHP</skill>
+        <skill>Javascript</skill>
+        <skill>MySQL</skill>
+        <bouton>
+            <link></link>
+            <icone>eye</icone>
+            <titre>Demo</titre>
+        </bouton>
+        <boutonGroupe>
+            <icone>download</icone>
+            <titre>Télécharger</titre>
+            <element category="bouton">
+                <link></link>
+                <icone>folder</icone>
+                <titre>Sources</titre>
+            </element>
+        </boutonGroupe>
+        <image>
+            <titre>Accueil du site de tchat</titre>
+            <link>tchat.jpg</link>
+        </image>
+        <paragraphe>
+            En 2ème année de licence, nous avions un projet à faire en PHP. Il fallait réaliser un site de chat avec certaines contraintes.&lt;br&gt;
+                    Il devait y avoir:
+            &lt;br&gt;- un admin capable de créer des utilisateurs, supprimer des chats, bannir des utilisateurs
+            &lt;br&gt;- une gestion des avatars
+            &lt;br&gt;- la possibilité pour un utilisateur de ban un utilisateur de son chat
+        </paragraphe>
+    </modal>
+    <!-- Fin #4 site de tchat -->
+    <!-- Début #5 Pogo Pandemonium -->
+    <modal>
+        <titre>Pogo Pandemonium en NCurses</titre>
+        <periode>novembre 2014 - décembre 2014</periode>
+        <poste>Projet étudiant</poste>
+        <skill>C</skill>
+        <skill>NCurses</skill>
+        <bouton>
+            <link></link>
+            <icone>eye</icone>
+            <titre>Demo</titre>
+        </bouton>
+        <boutonGroupe>
+            <icone>download</icone>
+            <titre>Télécharger</titre>
+            <element category="bouton">
+                <link>https://drive.google.com/folderview?id=0B6ljvdcpSGAyfmFiQlBFUUFuOFRtcFp4MUpiandLYlNKWTZBNGpYLVhiN3MxX21Nd1RmZ2s</link>
+                <icone>folder</icone>
+                <titre>Sources</titre>
+            </element>
+            <element category="divider">
+            </element>
+            <element category="header">
+                <name>Exécutable(s)</name>
+            </element>
+            <element category="bouton">
+                <link>https://drive.google.com/file/d/0B6ljvdcpSGAyMVlvZVVaZkFPM3c/view?usp=sharing</link>
+                <icone>linux</icone>
+                <titre>Linux - 32 bit</titre>
+            </element>
+        </boutonGroupe>
+        <image>
+            <titre>Capture d'écran du jeu Pogo Pandemonium en NCurses</titre>
+            <link>pogo.png</link>
+        </image>
+        <paragraphe>
+           Pogo Pandemonium est un mini jeu issu du jeu Crash Bash sorti sur Playstation il y'a quelques années&lt;br&gt;
+                    Ce jeu se déroule sur un plateau de cases, où 4 joueurs s'affrontent pour marquer le plus de cases possibles avec leur couleur avant la fin du temps réparti.
+                    Pour marquer une case de sa couleur, un joueur doit aller dessus, si un joueur va sur une case déjà marqué par un autre joueur, il remplace la couleur du joueur par la sienne.
+        </paragraphe>
+        <paragraphe>
+            La version du jeu qui a été programmée a été simplifiée, pas de power-up et un seul joueur humain affrontant 3 IA.
+                    Il fallait réaliser un programme en NCurses en utilisant des threads et des forks pour communiquer.
+        </paragraphe>
+    </modal>
+    <!-- Fin #5 Pogo Pandemonium -->
+    <!-- Début #6 OpenGL -->
+    <modal>
+        <titre>Modélisation 3D avec OpenGL</titre>
+        <periode>février 2015 - avril 2015</periode>
+        <poste>Projet étudiant</poste>
+        <skill>C</skill>
+        <skill>OpenGL</skill>
+        <skill>Maths</skill>
+        <boutonGroupe>
+            <icone>download</icone>
+            <titre>Télécharger</titre>
+            <element category="bouton">
+                <link>https://drive.google.com/folderview?id=0B6ljvdcpSGAyNmg5WGtfOHVpdDQ</link>
+                <icone>folder</icone>
+                <titre>Sources</titre>
+            </element>
+            <element category="divider">
+            </element>
+            <element category="header">
+                <name>Exécutable(s)</name>
+            </element>
+            <element category="bouton">
+                <link>https://drive.google.com/folderview?id=0B6ljvdcpSGAyNmg5WGtfOHVpdDQ</link>
+                <icone>linux</icone>
+                <titre>Linux - 32 bit</titre>
+            </element>
+        </boutonGroupe>
+        <image>
+            <titre>Le pokemon Rafflesia modélisé en 3D à l'aide d'OpenGL</titre>
+            <link>rafflesia_3D.jpg</link>
+        </image>
+        <paragraphe>
+           En 3ème année de licence, nous devions modéliser un personnage en utilisant la bibliothèque OpenGL et sans utiliser de logiciel-tiers.
+        </paragraphe>
+        <paragraphe>
+             J'ai choisi de modéliser Rafflesia car j'adore l'univers de Pokemon, ensuite pour le choix du pokemon, je l'ai fait en fonction des contraintes du projet.
+                    Nous devions réaliser un personnage avec un certain nombre de faces, et des bras et des jambes. Nous devions aussi utiliser une technique de modélisation vu en cours qui consiste à modéliser un élément rendondant et ensuite à le copier à un autre endroit au lieu de refaire une modélisation (pour plus de rapidité). Les pétales de Rafflesia correspondant bien à cela, mon choix c'est donc porté sur lui. &lt;br&gt;
+                    Le personnage devait évoluer dans une scène fermée, et être autonome au niveau des animations. Il devait aussi posséder un double controlé par l'utilisateur.&lt;br&gt;
+                    Il pouvait changer d'expression, bouger les articulations, avancer, et ne pouvait pas sortir de la scène. J'ai aussi implémenter la possibilité de sauter, bien que cela n'était pas demandé.
+        </paragraphe>        
+    </modal>
+    <!-- Fin #6 OpenGL -->
+    <!-- Début #7 refonte site -->
+    <modal>
+        <titre>Refonte graphique de mon portfolio</titre>
+        <periode>novembre 2015</periode>
+        <poste>Projet personnel</poste>
+        <skill>PHP</skill>
+        <skill>Bootstrap</skill>
+        <skill>JQuery</skill>
+        <image>
+            <titre>Page d'accueil du site</titre>
+            <link>background_min.jpg</link>
+        </image>
+        <paragraphe>
+            Quand on est en informatique, avoir un site moderne c'est plus important que de faire un joli CV. Cela met en application directement ce que l'on a pu apprendre durant son cursus scolaire, notamment en Web.
+C'est pour cela que j'ai effectué une refonte graphique de mon site afin qu'il fasse plus professionnel et plus ergonomique.&lt;br&gt;
+J'ai utilisé le framework CSS Bootstrap, afin de faire un site responsive adapté à tout type d'écran (large, moyen, tablette, smartphone).
+        </paragraphe>
+    </modal>
+    <!-- Fin #7 refonte site -->
+    <!-- Début #8 Scania -->
+    <modal>
+        <titre>Apprenti à Scania France SAS</titre>
+        <periode>7 avril 2015 - &lt;span style="color: #04B404;"&gt;En cours&lt;/span&gt;</periode>
+        <poste>Ingénieur informatique</poste>
+        <skill>C#</skill>
+        <skill>ASP .NET</skill>
+        <skill>Méthode Agile</skill>
+        <image>
+            <titre>Personnel de Scania France et Scania Finance</titre>
+            <link>scania.jpg</link>
+        </image>
+        <bouton>
+            <link>http://www.scania.fr/</link>
+            <icone>eye</icone>
+            <titre>Voir le site</titre>
+        </bouton>
+        <boutonGroupe>
+            <icone>download</icone>
+            <titre>Télécharger</titre>
+            <element category="bouton">
+                <link>https://drive.google.com/open?id=0B6ljvdcpSGAyVGQ5ZmdKVVpUV28</link>
+                <icone>file-pdf-o</icone>
+                <titre>Rapport de stage - L3</titre>
+            </element>
+        </boutonGroupe>
+        <paragraphe>
+            J'ai rejoins Scania France en Avril 2015 en tant que stagiaire au sein du service informatique pour une mission de 2 mois. Après le stage, j'y ai travaillé 2 mois supplémentaires durant l'été. Ensuite j'ai été embauché durant 2 ans en tant qu'apprenti.
+        </paragraphe>
+        <paragraphe>
+            J'ai travaillé dans la refonte d'une application utilisée par le service après-vente.
+L'application devait automatiser plusieurs tâches effectuées par le service afin de les faire gagner en productivité.
+Il fallait effectuer la refonte d'une application écrite en Microsoft Access.
+        </paragraphe>
+    </modal>
+    <!-- Fin #8 Scania -->
+</modals>

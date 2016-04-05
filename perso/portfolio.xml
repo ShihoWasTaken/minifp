@@ -1,0 +1,43 @@
+<?xml version='1.0' standalone='yes'?>
+<projets>
+    <projet>
+        <image>pw.jpg</image>
+        <titre>Pink Ward</titre>
+        <description>Webmaster d'un site d'esport</description>
+    </projet>
+    <projet>
+        <image>wordpress.jpg</image>
+        <titre>Générateur HTML</titre>
+        <description>Un générateur de page HTML pour les rédacteurs d'un site</description>
+    </projet>
+    <projet>
+        <image>cnrs.jpg</image>
+        <titre>Séquencage d'ADN</titre>
+        <description>Un projet d'étude sous la tutelle d'un chercheur du CNRS</description>
+    </projet>
+    <projet>
+        <image>messenger.png</image>
+        <titre>Site de tchat</titre>
+        <description>Un projet de site de tchat à faire en L2</description>
+    </projet>
+    <projet>
+        <image>pogo_square.png</image>
+        <titre>Pogo Pandemonium</titre>
+        <description>Création d'un jeu en NCurses en utilisant des pipe et des forks</description>
+    </projet>
+    <projet>
+        <image>rafflesia.jpg</image>
+        <titre>Modélisation 3D avec OpenGL</titre>
+        <description>Modélisation 3D d'un personnage et d'une scène</description>
+    </projet>
+    <projet>
+        <image>responsive.jpg</image>
+        <titre>Refonte site</titre>
+        <description>Refonte de mon site en responsive</description>
+    </projet>
+    <projet>
+        <image>scania_logo.jpg</image>
+        <titre>Scania</titre>
+        <description>Développement d'une application pour le service après vente</description>
+    </projet>
+</projets>

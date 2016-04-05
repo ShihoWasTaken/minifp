@@ -1,0 +1,75 @@
+<?xml version='1.0' standalone='yes'?>
+<skillbars>
+    <!-- #1 Début HTML 5 -->
+    <skillbar>        
+        <colorTitle>#d35400</colorTitle>
+        <colorBar>#e67e22</colorBar>
+        <title>HTML5 / CSS3</title>
+        <percent>100</percent>
+    </skillbar>
+    <!-- #1 Fin HTML 5 -->
+    <!-- #2 Début jQuery -->
+    <skillbar>
+        <colorTitle>#2c3e50</colorTitle>
+        <colorBar>#2c3e50</colorBar>        
+        <title>jQuery</title>
+        <percent>70</percent>
+    </skillbar>
+    <!-- #2 Fin jQuery -->
+    <!-- #3 Début PHP Objet -->
+    <skillbar>
+        <colorTitle>#46465e</colorTitle>
+        <colorBar>#5a68a5</colorBar>        
+        <title>PHP Objet</title>
+        <percent>90</percent>
+    </skillbar>
+    <!-- #3 Fin PHP Objet -->
+    <!-- #4 Début C ++ / Qt -->
+    <skillbar>
+        <colorTitle>#2980b9</colorTitle>
+        <colorBar>#3498db</colorBar>        
+        <title>C ++ / Qt</title>
+        <percent>85</percent>
+    </skillbar>
+    <!-- #4 Fin C ++ / Qt -->
+    <!-- #5 Début Java -->
+    <skillbar>
+        <colorTitle>#333333</colorTitle>
+        <colorBar>#525252</colorBar>        
+        <title>Java</title>
+        <percent>70</percent>
+    </skillbar>
+    <!-- #5 Fin Java -->
+    <!-- #6 Début C # / .NET -->
+    <skillbar>
+        <colorTitle>#27ae60</colorTitle>
+        <colorBar>#2ecc71</colorBar>        
+        <title>C # / .NET</title>
+        <percent>70</percent>
+    </skillbar>
+    <!-- #6 Fin C # / .NET -->
+    <!-- #7 Début XML / JSON -->
+    <skillbar>
+        <colorTitle>#124e8c</colorTitle>
+        <colorBar>#4288d0</colorBar>        
+        <title>XML / JSON</title>
+        <percent>90</percent>
+    </skillbar>
+    <!-- #7 Fin XML / JSON -->
+    <!-- #8 Début MySQL / ORM -->
+    <skillbar>
+        <colorTitle>#2eb38f</colorTitle>
+        <colorBar>#22e6b1</colorBar>        
+        <title>MySQL / ORM</title>
+        <percent>95</percent>
+    </skillbar>
+    <!-- #8 Fin MySQL / ORM -->
+    <!-- #9 Début J2EE -->
+    <skillbar>
+        <colorTitle>#DA6254</colorTitle>
+        <colorBar>#FA8072</colorBar>        
+        <title>J2EE</title>
+        <percent>60</percent>
+    </skillbar>
+    <!-- #9 Fin J2EE -->
+</skillbars>
