@@ -61,6 +61,7 @@ while($f = fgets(STDIN)){
 }
 */
 
+
 /* Cas où minifp est appelé sans commande */
 if($argc == 1)
 {
@@ -114,7 +115,7 @@ else if($argc > 2)
 			{
 				SPDO::getInstance()->insert($argv);
 			}
-		default:
+		break;
 		case '--vue':
 			if($argv[2] == "-liste")
 				View::displayAllTAbles();
@@ -140,6 +141,26 @@ else if($argc > 2)
 					}
 				}
 			}
+		break;
+		case '--controle':
+			switch($argv[2])
+			{
+				case "-sauve":
+					Controller::saveAllTables();
+				break;
+				case "-simule":
+					if($argc < 4)
+					{
+						echo 'nombre de paramètres incorrect pour la commande ' . $argv[2] . PHP_EOL;
+						echo 'Syntaxe: -simule nomTable nombreEnregistrements' . PHP_EOL;
+					}
+					else
+						Controller::simule($argv[3],$argv[4]);
+				break;
+			}				
+		break;
+		default:
+			echo ShellColor::colorize("Cette commande n'existe pas",'J') . PHP_EOL;
 		break;
 	}
 }
