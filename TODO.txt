@@ -1,9 +1,5 @@
 Il faut voir ou mettre le parameters.json
 Essayer d'utiliser symfony pour parser le yaml
 tenter de parser le csv
-Implémenter un remplisseur de table aléatoire
 
-parser json yaml csv
-faire --model -def
---model -data
-
+parser yaml csv

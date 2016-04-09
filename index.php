@@ -7,6 +7,7 @@ function __autoload($classname)
     require_once("phar://minifp/" . $filename);
 }
 
+
 /*
 echo 'Configuration de la base de données' . PHP_EOL;
 echo 'La configuration par défaut est: ' . PHP_EOL;
