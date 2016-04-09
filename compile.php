@@ -1,7 +1,7 @@
 <?php
 	try 
 	{
-		$phar = new Phar('minifp.phar',0,'minifp.phar');
+		$phar = new Phar('minifp.phar',0,'minifp');
 		$phar->startBuffering();
 		$defaultStub = $phar->createDefaultStub('index.php');
 		$phar->addFile('index.php');

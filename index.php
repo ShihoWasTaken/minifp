@@ -3,8 +3,8 @@
 // On définit une fonction d'autoloading afin de ne pas s'embêter inutilement avec les includes de classes
 function __autoload($classname)
 {
-    $filename = "./includes/". $classname .".php";
-    require_once($filename);
+    $filename = $classname .".php";
+    require_once("phar://minifp/" . $filename);
 }
 
 /*
@@ -93,7 +93,7 @@ else if($argc > 2)
 	switch($argv[1])
 	{
 		case '--new':
-			create_project($argv[2]);			
+			Project::create($argv[2]);			
 		break;
 
 		case '--model':
@@ -101,9 +101,22 @@ else if($argc > 2)
 			{
 				echo 'nombre de paramètres incorrect' . PHP_EOL;
 			}
-			else
+			switch($argv[3])
 			{
-				SPDO::getInstance()->createColumns($argv);
+				case "-yaml":
+					echo ShellColor::colorize('Le parsing du YAML n\'est pas encore implémenté','J');
+				break;
+				case '-json':
+					if(isset($argv[4]))
+						SPDO::getInstance()->createColumnsJSON($argv[4],$argv[2]);
+					else
+						echo ShellColor::colorize('Vous devez donner le nom du fichier à utiliser','J') . PHP_EOL;
+				break;
+				case '-csv':
+				break;
+				default:
+					SPDO::getInstance()->createColumns($argv);
+				break;
 			}
 		break;
 		case '--data':
@@ -111,9 +124,22 @@ else if($argc > 2)
 			{
 				echo 'nombre de paramètres incorrect' . PHP_EOL;
 			}
-			else
+			switch($argv[3])
 			{
-				SPDO::getInstance()->insert($argv);
+				case "-yaml":
+					echo ShellColor::colorize('Le parsing du YAML n\'est pas encore implémenté','J') . PHP_EOL;
+				break;
+				case '-json':
+					if(isset($argv[4]))
+						SPDO::getInstance()->insertJSON($argv[4],$argv[2]);
+					else
+						echo ShellColor::colorize('Vous devez donner le nom du fichier à utiliser','J') . PHP_EOL;
+				break;
+				case '-csv':
+				break;
+				default:
+					SPDO::getInstance()->insert($argv);
+				break;
 			}
 		break;
 		case '--vue':
@@ -130,13 +156,19 @@ else if($argc > 2)
 					switch($argv[3])
 					{
 						case "-montre":
-							View::showTable($argv[2]);
+							if(isset($argv[4]))
+								View::showTable($argv[2],$argv[4]);
+							else
+								View::showTable($argv[2]);
 						break;
 						case "-uri":
 							View::showURI($argv[2]);
 						break;
 						case "-navigue":
 							View::browseTable($argv[2]);
+						break;
+						default:
+							echo ShellColor::colorize("Cette option n'existe pas",'J') . PHP_EOL;
 						break;
 					}
 				}
@@ -146,16 +178,30 @@ else if($argc > 2)
 			switch($argv[2])
 			{
 				case "-sauve":
-					Controller::saveAllTables();
+					Controller::MySQLDump();
+				break;
+				case "-restaure":
+				{
+					if($argc < 4)
+					{
+						echo 'nombre de paramètres incorrect pour la commande ' . $argv[2] . PHP_EOL;
+						echo 'Syntaxe: -restaure nomFichier' . PHP_EOL;
+					}
+					else
+						Controller::MySQLImport($argv[3]);
+				}
 				break;
 				case "-simule":
-					if($argc < 4)
+					if($argc < 5)
 					{
 						echo 'nombre de paramètres incorrect pour la commande ' . $argv[2] . PHP_EOL;
 						echo 'Syntaxe: -simule nomTable nombreEnregistrements' . PHP_EOL;
 					}
 					else
 						Controller::simule($argv[3],$argv[4]);
+				break;
+				default:
+					echo ShellColor::colorize("Cette option n'existe pas",'J') . PHP_EOL;
 				break;
 			}				
 		break;
