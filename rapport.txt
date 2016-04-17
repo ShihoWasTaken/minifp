@@ -1,4 +1,9 @@
-Décommentez la ligne
+I) Installation
+
+Il faut commencer par editer le fichier php.ini régissant php en ligne de commande
+Il devrait se trouver à:
+/etc/php5/cli/php.ini
+Il faut ensuite remplacer la ligne
 ;phar.readonly = On
 par
 phar.readonly = false
@@ -7,4 +12,34 @@ afin de permettre la création d'archives phar
 Le programme a été conçu à l'aide du système d'achives PHP (Phar)
 Cela permet de "compiler" les sources .php en un seul fichier exécutable
 On peut ainsi organiser ses sources comme on le désire et livrer un unique fichier executable
-Cela permet une maintenance et un développement plus aisé
+Cela permet une maintenance et un développement plus aisé.
+
+Pour installer le programme, il suffit de lancer le script setup.sh.
+Il va se charger d'appeler le script compile.php afin de compiler les sources en PHAR et de déplacer le programme dans /usr/bin afin de pouvoir y accéder avec la commande minifp de manière globale depuis n'importe quel repertoire.
+Une fois l'installation terminée, vous pouvez supprimer les sources si vous ne comptez pas modifier le programme et le recompiler.
+
+II) Fonctionnement général
+Minifp s'utilise comme n'importe quel framework web, il faut d'abord créer un nouveau projet. Puis se déplacer dans le dossier crée.
+Chaque projet peut ainsi avoir sa propre configuration de base de données.
+A chaque fois que minifp devra exécuter une requête SQL, il cherchera les informations relatives à la base dans le fichier parameters.json.
+Il ne faut donc pas oublier de modifier le fichier parameters.json pour renseigner les informations relatives à la base MySQL (si elles diffèrent des miennes)
+
+III) Améliorations possibles
+Mettre en place un système de routing pour une réécriture intelligente des URL
+Parsing des fichiers YAML et CSV
+Une meilleure gestion des arguments en ligne de commande, ma gestion n'est pas vraiment flexible
+
+IV) Commentaires
+Le parsing du YAML et du CSV n'ont pas été implémentées car PHP de propose pas ces extensions nativement, cela aurait donc nécessité de la configuration supplémentaire pour l'utilisateur.
+Ce mini framework n'est pas aussi complet qu'un vrai poids lourds des frameworks car cela nécessite beaucoup de temps de développer toutes les fonctionnalités qui peuvent être nécessaires.
+Néanmoins il dispose quand même de beaucoup de fonctionnalités.
+
+V) Commandes disponibles et description
+
+--aide
+cette commande affiche l'aide
+
+--new nom_projet
+Crée un dossier nom_projet contenant toute la configuration nécessaire pour le projet.
+
+--model

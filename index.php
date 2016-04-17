@@ -58,6 +58,7 @@ else if($argc > 2)
 						echo ShellColor::colorize('Vous devez donner le nom du fichier à utiliser','J') . PHP_EOL;
 				break;
 				case '-csv':
+					echo ShellColor::colorize('Le parsing du CSV n\'est pas encore implémenté','J') . PHP_EOL;
 				break;
 				default:
 					SPDO::getInstance()->createColumns($argv);
@@ -81,6 +82,7 @@ else if($argc > 2)
 						echo ShellColor::colorize('Vous devez donner le nom du fichier à utiliser','J') . PHP_EOL;
 				break;
 				case '-csv':
+					echo ShellColor::colorize('Le parsing du CSV n\'est pas encore implémenté','J') . PHP_EOL;
 				break;
 				default:
 					SPDO::getInstance()->insert($argv);
